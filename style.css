@@ -47,3 +47,36 @@ body{
   height: 100vh;
   background-color: rgb(40, 187, 255);
 }
+.center {
+  width: 50%;
+  margin: auto;
+  /* border: 3px solid green; */
+  padding: 10px;
+  position: relative;
+}
+.center h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  font-size: 44px;
+}
+.slide {
+  position: absolute;
+  left: -600px;
+  width: 600px;
+  height: 370px;
+  background: blue;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
+}
